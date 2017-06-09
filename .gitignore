@@ -1,0 +1,192 @@
+### modello di .gitignore per progetti cocos2dx
+### versione 1.1
+
+# Texture Packer files
+#*.tps
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.apk
+
+# Ignore thumbnails created by windows
+Thumbs.db
+
+# Ignore files build by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.aps
+*.vcproj.*.user
+*.vcxproj.user
+*.csproj.user
+*.vspscc
+*_i.c
+*.i
+*.icf
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug/
+[Dd]ebug.win32/
+*.sbr
+*.sdf
+obj/
+[Rr]elease/
+[Rr]elease.win32/
+_ReSharper*/
+[Tt]est[Rr]esult*
+ipch/
+*.opensdf
+
+# Ignore files build by ndk and eclipse
+libs/
+bin/
+obj/
+assets/
+gen/
+out/
+#.classpath
+#.project
+.cproject
+local.properties
+.settings
+
+# Ignore python compiled files
+*.pyc
+
+# Ignore files build by airplay and marmalade
+build_*_xcode/
+build_*_vc10/
+
+# Ignore files build by xcode
+*.xccheckout
+*.mode*v*
+*.pbxuser
+*.xcbkptlist
+#*.xcworkspacedata
+*.xcuserstate
+*.xccheckout
+xcschememanagement.plist
+.DS_Store
+._.*
+xcuserdata/
+DerivedData/
+build/
+
+# Ignore files built by AppCode
+.idea/
+
+# Ignore files built by bada
+.Simulator-Debug/
+.Target-Debug/
+.Target-Release/
+
+# Ignore files built by blackberry
+Simulator/
+Device-Debug/
+Device-Release/
+
+# Ignore vim swaps
+*.swp
+*.swo
+
+# CTags
+tags
+
+# ignore files, created with make-all-linux-project script
+/lib
+/build/linux-build
+
+# Cmake files
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+
+# Android
+#project.properties
+
+# backup files
+*.bak
+*.bak[0-9][0-9]
+*.orig
+*.orig[0-9][0-9]
+
+# source packages - anywhere
+*.tar.bz2
+*.tar.gz
+*.tar
+*.tgz
+*.gtgz
+
+#Cocoa pods
+*.old
+Pods/*
+
+#Java
+*.class
+
+# Attualmente non utilizzati
+proj.linux
+proj.wp8-xaml
+
+# Altre librerie precompilate da includere
+!cocos2d/external/**/*.a
+!cocos2d/plugin/**/*.a
+!cocos2d/cocos/platform/android/java/**/libs
+!cocos2d/cocos/platform/android/libcocos2dx/libs
+!cocos2d/cocos/platform/android/libcocos2dx/libs/**/libs
+!proj.ios_mac/**/*.a
+!proj.android/RBAndroidSDK/**/libs
+!proj.android/jni/**/libs
+!proj.android/jni/**/libs/**/*.a
+
+# Includo solo i file .jar presenti direttamente nella cartella libs in proj.android
+proj.android/libs/**
+!proj.android/libs/
+!proj.android/libs/*.jar
+!proj.android-studio/app/libs
+!proj.android-studio/app/jni/**/libs
+!proj.android-studio/app/jni/**/libs/**/*.a
+!proj.android-studio/RBAndroidSDK/libs
+
+# File di progetto Xcode necessari per cocos2dx
+!cocos2d/build/*.xcodeproj
+
+#
+proj.android/obj/
+proj.android/assets/
+proj.android/bin/
+proj.android/gen/
+cocos2d/cocos/platform/android/java/bin/
+cocos2d/cocos/platform/android/java/gen/
+.d
+*.iml
+gdb.setup
+gdbserver
